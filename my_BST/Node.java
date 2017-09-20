@@ -7,20 +7,27 @@ class Node
     private Node leftChild;
     private Node rightChild;
 
-    public Node(){
-	
+    public Node(int bNumberIn){
+	bNumber = bNumberIn;
+	subjects = new ArrayList<String>();
+	leftChild = null;
+	rightChild = null;
     }
 
     public int getBNumber(){
 	return bNumber;
     }
-
+    /*
     public void setBNumber(int xIn){
 	bNumber = xIn;
-    }
+	}*/
 
     public Node getLeftChild(){
 	return leftChild;
+    }
+
+    public void setLeftChild(Node nodeIn){
+	leftChild = nodeIn;
     }
 
     public Node getRightChild(){

@@ -24,12 +24,13 @@ class Tree
     }
 
     public void insert(int id, String subjectName){
+	Node newNode;
 	if(this.find(id)==null){
-	    Node newNode = new Node();
-	    newNode.setBNumber(id);
+	    Node newNode = new Node(id);
+	    // newNode.setBNumber(id);
 	    newNode.insertSubject(subjectName);
 	    if(root==null){
-		root = neNode;
+		root = newNode;
 	    }else{
 		Node current = root;
 		Node parent;
@@ -38,13 +39,15 @@ class Tree
 		    if(id<current.getBNumber()){
 			current = current.getLeftChild();
 			if(current==null){
-			    
+
 			}
 		    }
 		}
+	
+	    }else{
+		newNode = find(id);
+	    	newNode.insertSubject(subjectName);
 	    }
-	}else{
-	    
 	}
 	
     }

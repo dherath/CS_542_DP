@@ -16,7 +16,11 @@ class Tree
 	    }else{
 		current = current.getRightChild();
 	    }
+	    if(current==null){
+		return null;
+	    }
 	}
+	return current;
     }
 
     public void insert(int id, String subject){}

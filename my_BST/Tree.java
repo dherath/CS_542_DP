@@ -23,7 +23,14 @@ class Tree
 	return current;
     }
 
-    public void insert(int id, String subject){}
+    public void insert(int id, String subject){
+	if(this.find(id)==null){
+	    
+	}else{
+	    
+	}
+	
+    }
 
     public void delete(){}
 }

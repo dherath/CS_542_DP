@@ -15,6 +15,10 @@ class Node
 	return bNumber;
     }
 
+    public void setBNumber(int xIn){
+	bNumber = xIn;
+    }
+
     public Node getLeftChild(){
 	return leftChild;
     }

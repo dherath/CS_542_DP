@@ -23,9 +23,26 @@ class Tree
 	return current;
     }
 
-    public void insert(int id, String subject){
+    public void insert(int id, String subjectName){
 	if(this.find(id)==null){
-	    
+	    Node newNode = new Node();
+	    newNode.setBNumber(id);
+	    newNode.insertSubject(subjectName);
+	    if(root==null){
+		root = neNode;
+	    }else{
+		Node current = root;
+		Node parent;
+		while(true){
+		    parent = current;
+		    if(id<current.getBNumber()){
+			current = current.getLeftChild();
+			if(current==null){
+			    
+			}
+		    }
+		}
+	    }
 	}else{
 	    
 	}

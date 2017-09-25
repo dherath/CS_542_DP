@@ -22,7 +22,7 @@ class Tree
 	}
 	return current;
     }
-
+    //change to insertNode,insertSubject,deleteNode,deleteSubject
     public void insert(int id, String subjectName){
 	Node newNode;
 	if(this.find(id)==null){

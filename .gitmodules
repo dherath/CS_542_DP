@@ -6,3 +6,7 @@
 	path = jerome_herath_assign_2
 	url = https://dherath@bitbucket.org/dherath/jerome_herath_assign_2.git
 
+[submodule "jerome_herath_assign_3"]
+	path = jerome_herath_assign_3
+	url = https://dherath@bitbucket.org/dherath/jerome_herath_assign_3.git
+

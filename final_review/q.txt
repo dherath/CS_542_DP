@@ -1,0 +1,25 @@
+1. The grade for a course uses several evaluated items: Exams, Quizes,Homeworks, Assignments, and class participation. Briefly outline thecode or pseudo-code to evaluate the grade for a given student in thecourse. The output is the final grade out of 100, that is calculatedas (weight for a category) * (average for that category). The weightfor each category is a fraction between 0 and 1. 
+
+
+2. Suppose you have a structured document like an HTML file. The document has images and text. Design a program so that you can add the following features to your processing tool
+
+ spell check
+ fast spell check
+ add RSS feed
+ Number all the figures in order
+ 
+ 
+3. The new health-first combo meal plan allows students to choose a soup, a salad, whole grain bread, and a fruit juice. Each of the chosen items has cost and calories associated with it. Sketch the design of a program to generate the cost and calories for a chosen health-first combo meal. 
+
+
+4. Design a tool that provides the functionality to search files of all types on your desktop for a given user input string. The utility, find_word, allows users to enter text in a search box. It then opens each file, based on the file name extension, using the preferred utility for that file name extension, uses the methods in that tool to retrieve al the strings, and the compares against the input entered by the user. 
+
+5. A company has 3 kinds of employees: Manager, Software Designer, andHardware Engineer. Each employee category has a different PTO (PaidTime Off) scheme. For example, the Software Engineer is part of a Bonus-Holiday scheme wherein his/her PTOs depend on the successfulprojects completed in a month. The CEO of the company wants to findout how many combined PTOs are left at the end of the year, so they can be donated to sick employees in need. Design a software module to calculate this value. 
+
+6. The admissions office of a university keeps online documentation ina single format. It gets updated frequently and the single formathelps maintenance (make changes in only one place). However, the new requirement is that the users should be able to download informationin different formats such as HTML, PDF, and Word. Assume that as a Computer Science major you are aware of open source packages that convert the information to these formats.  
+
+7. In a graphic-design-tool, it is possible to group pieces together. For example, 4 circles and associated text can be moved as a group. Similarly, it is possible to change the boxed outline around all the pieces in a group. Sketch the software design to achieve this “group” functionality.
+
+8. An automated teller machine outside a bank allows customers to (i)deposit cash and checks, (ii) withdraw cash and travelers checks,(iii) ask for the balance in the account, (iv) transfer from oneaccount to another (e.g. from savings to loans), (v) deposit cash andwithdraw cash (or travelers checks) as part of a single transaction.The bank account of the customer is however updated at a fixed timeevery day (noon, for example). Briefly sketch the design pattern(s)you will use to implement these functionalities of the teller machine. 
+
+

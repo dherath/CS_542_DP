@@ -1,0 +1,130 @@
+A quick brown fox jumps over the lazy dog
+The question of whether a computer can think is no more interesting than the question of whether a submarine can swim Edsger W Dijkstra
+In WordList java an array is used to store a list of lower case word in alphabetical order and at the end of the program the words 
+are output to a file in order Since a binary sort tree is designed to store words in alphabetical order it can be used as a 
+substitute for the array At the end of the program an inorder traversal of the tree can be used to output the words to the file
+Using an inorder traversal guarantees that the words will be output in order
+Only a few changes are needed in the main routine They are marked in red in the solution shown below It uses a differnt type of 
+variable and it calls a few different routines but the logic is unchanged The code that we need in order to implement the binary 
+sort tree can be copied almost directly from Section 114 The inorderPrint routine in that section prints its strings to standard output
+In order to print to a file I have added a parameter of type PrintWriter The main routine provides a stream for writing to the output file
+The treeInsert routine from Section 114 has been renamed to wordList here to be consistent with the subroutine call in the main routine
+I have also made a few other changes to adapt it to this program The wordList routine coverts its parameter to lower case
+It also refuses to insert duplicate items into the tree That is if it finds a copy of the parameter already in the tree it returns 
+without adding anything to the tree
+All in all the substitution of the binary tree for the array is very straightforward
+The process of picking out abstracting common features of objects and procedures
+A category of objects The class defines all the common properties of the different objects that belong to it
+If a class disallows calling code from accessing internal object data and forces access through methods only this is a 
+strong form of abstraction or information hiding known as encapsulation
+Objects can contain other objects in their instance variables this is known as object composition For example an object in the 
+Employee class might contain point to an object in the Address class in addition to its own instance variables like first name and position
+Object composition is used to represent has a relationships every employee has an address so every Employee object has a place to store an Address object
+Languages that support classes almost always support inheritance This allows classes to be arranged in a hierarchy that 
+represents is a type of relationships For example class Employee might inherit from class Person All the data and 
+methods available to the parent class also appear in the child class with the same names For example class Person 
+might define variables first name and last name with method make full name These will also be available in class 
+Employee which might add the variables position and salary This technique allows easy reuse of the same procedures 
+and data definitions in addition to potentially mirroring real world relationships in an intuitive way Rather than 
+utilizing database tables and programming subroutines the developer utilizes objects the user may be more familiar 
+with objects from their application domain
+Message passing is a form of communication used in parallel programming and object oriented programming
+Abstraction from the Latin abs meaning away from and trahere meaning to draw is the process of taking away or 
+removing characteristics from something in order to reduce it to a set of essential characteristics In object
+oriented programming abstraction is one of three central principles along with encapsulation and inheritance
+Through the process of abstraction a programmer hides all but the relevant data about an object in order to 
+reduce complexity and increase efficiency In the same way that abstraction sometimes works in art the object 
+that remains is a representation of the original with unwanted detail omitted The resulting object itself can 
+be referred to as an abstraction meaning a named entity made up of selected attributes and behavior specific 
+to a particular usage of the originating entity Abstraction is related to both encapsulation and data hiding
+a self contained entity that consists of both data and procedures to manipulate the data
+Generally the ability to appear in many forms In object oriented programming polymorphism refers to a 
+programming languages ability to process objects differently depending on their data type or class More 
+specifically it is the ability to redefine methods for derived classes For example given a base class 
+shape polymorphism enables the programmer to define different area methods for any number of derived 
+classes such as circles rectangles and triangles No matter what shape an object is applying the area 
+method to it will return the correct results Polymorphism is considered to be a requirement of any 
+true object oriented programming language
+The material in this document details an Object Management Group specification in accordance with the terms
+conditions and notices set forth below This document does not represent a commitment to implement any portion of this
+specification in any company products The information contained in this document is subject to change without notice
+The companies listed above have granted to the Object Management Group Inc OMG a nonexclusive royalty free
+paid up worldwide license to copy and distribute this document and to modify this document and distribute copies of the
+modified version Each of the copyright holders listed above has agreed that no person shall be deemed to have infringed
+the copyright in the included material of any such copyright holder by reason of having used the specification set forth
+herein or having conformed any computer software to the specification
+Subject to all of the terms and conditions below the owners of the copyright in this specification hereby grant you a
+fully paid up nonexclusive nontransferable perpetual worldwide license without the right to sublicense to use this
+specification to create and distribute software and special purpose specifications that are based upon this specification
+and to use copy and distribute this specification as provided under the Copyright Act provided that 1 both the
+copyright notice identified above and this permission notice appear on any copies of this specification 2 the use of the
+specifications is for informational purposes and will not be copied or posted on any network computer or broadcast in
+any media and will not be otherwise resold or transferred for commercial purposes and 3 no modifications are made to
+this specification This limited permission automatically terminates without notice if you breach any of these terms or
+conditions Upon termination you will destroy immediately any copies of the specifications in your possession or
+control
+The attention of adopters is directed to the possibility that compliance with or adoption of OMG specifications may
+require use of an invention covered by patent rights OMG shall not be responsible for identifying patents for which a
+license may be required by any OMG specification or for conducting legal inquiries into the legal validity or scope of
+those patents that are brought to its attention OMG specifications are prospective and advisory only Prospective users
+are responsible for protecting themselves against liability for infringement of patents
+Any unauthorized use of this specification may violate copyright laws trademark laws and communications regulations
+and statutes This document contains information which is protected by copyright All Rights Reserved No part of this
+work covered by copyright herein may be reproduced or used in any form or by any means graphic electronic or
+mechanical including photocopying recording taping or information storage and retrieval systems without permission
+of the copyright owner
+The copyright holders listed above acknowledge that the Object Management Group  acting itself or through its
+designees  is and shall at all times be the sole entity that may authorize developers  suppliers and sellers of computer
+software to use certification marks  trademarks or other special designations to indicate compliance with these materials 
+Software developed under the terms of this license may claim compliance or conformance with this specification if and
+only if the software compliance is of a nature fully matching the applicable compliance points as stated in the
+specification  Software developed only partially matching the applicable compliance points may claim only that the
+software was based on this specification  but may not claim compliance or conformance with this specification  In the
+event that testing suites are implemented or approved by Object Management Group  Inc   software developed using this
+specification may claim compliance or conformance with the specification only if the software satisfactorily completes
+the testing suites
+This conformance class applies to published practice descriptions defined using the Essence language  as specified in
+Clause 9  It provides a clear indication of what can be done with the practice description  One of three levels of
+conformance may be claimed for a practice description  as further described below 
+NOTE These practice description conformance levels are not associated with a practice they are measure of the level of
+detail with which the practice has been described  It is quite possible for the same practice to be described at all the
+different conformance levels  for example Scrum could be described by different authors at different conformance levels 
+It is also possible for teams to use practices which are described at different conformance levels  for example a team
+could have their much used development and requirement practices at level 3 as these areas are important for them to
+monitor and track  and their project kick off practices at level 1 as it is not as important to track their progress and they
+are typically only performed once by the team 
+Practice descriptions defined at this conformance level use the conceptual elements of the Essence language as a
+framework for structuring their text  All of the elements in the practice are expressed correctly according to the language 
+for example all the work products appear as work products and all the activities appear as activities  Beyond this simple
+classification of the elements in the practice there are no other constraints or invariants 
+Once published practices at this level can be referenced by other practices but cannot be exchanged between tools or
+automatically composed with other practices  Practices described at this level are typically just free format text and there
+is no XMI interchange format for sharing or composing them
+Practice descriptions defined at this level use the full expressive quality of the language Everything is typed properly and
+uses any applicable language element attributes and associations correctly for example all the elements will have names
+and brief descriptions conformant with the language rules and all associations between the elements will be queryable
+and traversable
+Level 2 practices can be exchanged between tools in XMI This formal use of the language allows the practices to be
+composed with the kernel and other practices Practice descriptions at this level are highly structured and will require
+specialist authoring or modeling tools to produce
+Level 2 practice descriptions add rigor and XMI interchange to Level 1 This provides the consistency and robustness to
+all tools to do things with them They can read manipulate and compose the practices but a person is needed to
+action the resulting composition
+Practice descriptions defined at this level use the full power of the language to ensure they are prepared to be
+automatically actioned and tracked For example there will always be an Alpha with a fully defined state machine with a
+complete set of checklists either contained in or extended by the practice and all activities will be clearly related to the
+Alpha state progressions that they enable
+Like Level 2 practice descriptions level 3 practice descriptions can be exchanged between tools using XMI and like the
+level 2 practice descriptions they can be composed with the kernel and other practice descriptions Practice descriptions
+at this level are highly structured and will require specialist authoring or modeling tools to produce
+Level 3 practice descriptions add additional detail and precision over and above that needed for practice descriptions
+defined at Level 2 The additional information ensures full support for the languages dynamic semantics enabling tools
+to provide more sophisticated features such as real time alpha state tracking task generation pattern matching and
+completeness checking
+This conformance class applies to tools that provide the ability to define practices and methods using the Essence
+language As defined in 9328 the Essence language Foundation includes the ability to define a kernel as a set of
+elements used to form a common ground for describing a software engineering endeavor and as specified in 93212 a
+method must be defined based on a specific kernel While the Essence language provides this general capability for
+defining and using kernels a tool may only claim conformance to this specification if it provides both the ability to
+define methods and practices in the Essence language and a built in definition of the Essence kernel that may be used in
+the definition of methods Specifically 1221

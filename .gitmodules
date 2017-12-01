@@ -16,3 +16,6 @@
 [submodule "esraa_aldreabi_robert_valenti_jerome_herath_assign_5"]
 	path = esraa_aldreabi_robert_valenti_jerome_herath_assign_5
 	url = https://dherath@bitbucket.org/ealdrea1/esraa_aldreabi_robert_valenti_jerome_herath_assign_5.git
+[submodule "jerome_herath_assign_6"]
+	path = jerome_herath_assign_6
+	url = https://dherath@bitbucket.org/dherath/jerome_herath_assign_6.git

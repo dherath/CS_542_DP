@@ -1,3 +1,0 @@
-The total number of words: 6
-The total number of characters: 1
-The total number of distinct words: 2
